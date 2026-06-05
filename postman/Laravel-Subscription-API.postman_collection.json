@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "5b1fc0a2-9020-4c67-b00d-b90827d24d48",
+		"name": "Users",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12258226",
+		"_collection_link": "https://red-shadow-493645.postman.co/workspace/Laravel-Subscription-API-Assign~5d249dbf-6ba6-419a-9e7c-435071eb23f5/collection/12258226-5b1fc0a2-9020-4c67-b00d-b90827d24d48?action=share&source=collection_link&creator=12258226"
+	},
+	"item": [
+		{
+			"name": "Get User details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/users",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Purchase Subscription",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\": 1,\r\n    \"subscription_id\": 2,\r\n    \"amount\": 999\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/subscriptions/purchase",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"subscriptions",
+						"purchase"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "subscriptions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/subscriptions",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"subscriptions"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
